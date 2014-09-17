@@ -36,7 +36,7 @@ class LinksController extends BaseController {
 
         catch(ValidationException $e)
         {
-            return Redirect::home()->withErrors($e->getErrors())->withInput('url');
+            return Redirect::home()->withErrors($e->getErrors())->withInput();
         }
 
         return Redirect::home()->with([
@@ -45,8 +45,10 @@ class LinksController extends BaseController {
         ]);
 	}
 
-    public function translateHash($hash) {
-        try {
+    public function translateHash($hash)
+    {
+        try
+        {
             $url = Little::getUrlByHash($hash);
 
             return Redirect::to($url);

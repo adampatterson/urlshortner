@@ -123,6 +123,7 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
         'Way\Generators\GeneratorsServiceProvider',
         'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
+        'P53\Shortener\LittleServiceProvider'
 //        'Way\Repositories\BackendServiceProvider',
 //        'Way\Shortener\LittleServiceProvider',
 //        'Way\Utilities\UtilitiesServiceProvider'
@@ -192,7 +193,7 @@ return array(
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
-
+        'Little'          => 'P53\Shortener\Facades\Little'
 	),
 
 );

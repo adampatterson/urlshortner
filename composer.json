@@ -18,7 +18,8 @@
 			"app/tests/TestCase.php"
 		],
         "psr-4": {
-            "Way\\": "app/Way"
+            "Way\\": "app/Way",
+            "P53\\": "app/P53"
         }
 	},
 	"scripts": {
