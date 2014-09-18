@@ -123,7 +123,8 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
         'Way\Generators\GeneratorsServiceProvider',
         'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
-        'P53\Shortener\LittleServiceProvider'
+        'P53\Shortener\LittleServiceProvider',
+        'Clockwork\Support\Laravel\ClockworkServiceProvider'
 //        'Way\Repositories\BackendServiceProvider',
 //        'Way\Shortener\LittleServiceProvider',
 //        'Way\Utilities\UtilitiesServiceProvider'
