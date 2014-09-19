@@ -3,6 +3,12 @@
 use P53\Exception\NonExistentHashException;
 
 class LittleService {
+
+    public function __construct($linkRepo)
+    {
+        $this->linkRepo = $linkRepo;
+    }
+
     public function make()
     {
         
