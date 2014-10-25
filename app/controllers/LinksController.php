@@ -45,18 +45,18 @@ class LinksController extends BaseController {
         ]);
 	}
 
-    public function translateHash($hash)
+    public function processHash($hash)
     {
         try
         {
             $url = Little::getUrlByHash($hash);
 
-            return Redirect::to($url);
+            return Redirect::away($url);
         }
 
         catch ( NonExistentHashException $e )
         {
-            return Redirect::home()->with('flash_message', 'Sorry - could not find your desired URL.');
+            return Redirect::home()->withFlashMessage('Sorry - could not find your desired URL.');
         }
     }
 }

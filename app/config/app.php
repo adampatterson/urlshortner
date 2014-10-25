@@ -124,6 +124,7 @@ return array(
         'Way\Generators\GeneratorsServiceProvider',
         'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
         'P53\Shortener\LittleServiceProvider',
+        'P53\Repositories\BackendServiceProvider',
         'Clockwork\Support\Laravel\ClockworkServiceProvider'
 //        'Way\Repositories\BackendServiceProvider',
 //        'Way\Shortener\LittleServiceProvider',
